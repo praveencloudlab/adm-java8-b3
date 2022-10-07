@@ -1,0 +1,27 @@
+Java naming convensions
+===============================
+
+1.   variable/method/objects
+	-> all variable/method/object names should starts
+     with lower case letter. Incase if there are more than
+     one word in variable/method/object names, then
+     each word first letter should be uppercase letter
+     Ex: display, employeeInfo, studentName, dispEmpData
+
+2. class
+	-> every class in java should starts with upper case
+     letters. Incase if there are more than
+     one word in class name, then each word first letter 
+     should be uppercase letter
+     Ex: Student,InputStream, ProductStoreManagement
+
+3. keywords/packages
+	-> all keywords/packages in java should be in lower case
+     letters
+		ex: int, com, for, if
+
+4. const
+	-> every const in java should be in upper case letters
+	  ex: PI, MAX_VALUE, COMPANY_NAME etc
+
+
