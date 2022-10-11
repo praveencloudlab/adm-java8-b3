@@ -1,0 +1,12 @@
+create a class Product, and provide following properties
+	id, name,price description
+
+ -> make sure id,name,price must be proivided at the time of object creation
+ -> add descption to the product object as optional.
+ -> create 3 products with id,name and price
+ -> display sum of all the 3 products added. return the sum of products to the method call
+ -> didplay all products inside a method with static and non static method
+ -> use two classes. one class for product operations, other class for calling product methods
+ -> use static and instance blocks where ever needed.
+
+
