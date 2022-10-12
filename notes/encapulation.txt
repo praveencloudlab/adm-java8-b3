@@ -1,0 +1,87 @@
+encapulation
+------------------
+-> binding properties and methods together in a class
+
+advantages
+---------------
+-> visibility scopes can be defined
+		-> public
+		-> protected
+		-> default
+		-> private
+-> organized structure with packages
+
+
+access mofifiers
+--------------------
+		-> public
+		-> protected
+		-> default
+		-> private
+
+public
+-----------
+-> public data is accessible to all the classes from any package
+
+protected
+---------
+-> protected data is accessble for the classs of the same package and 
+   other package sub class objects
+
+default
+--------
+-> default data is accessible to the same package classes only
+
+
+private
+---------
+-> private data is accessible with in the same class
+
+
+ POJO (plain old java object) /model / bean / entity 
+---------------------------------------------------------------------
+-> this class is indipendent to all other frameworks. 
+-> This class can be directly plugble to any framework
+-> It deosn't have any dependency issues
+
+rules
+-----------
+1.all the properties of class should be private
+2.all the methods of the class should be public with getters and setters
+
+getters
+---------
+-> getters will not gave arguments. but will have return type.
+-> name of these methods should be followed by getXXX (where XXX is the name of property)
+   ex:
+   int empId
+   public int getEmpId(){return empId;}
+
+setters
+--------
+-> setters will not have return type, but have arguments
+-> name of these setters should be followed by setXXX( where XXX is the name pf property) 
+   ex: 
+   int empId;
+   public void setEmpId(int empId){this.empId=empId; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
