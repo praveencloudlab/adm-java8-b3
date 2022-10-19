@@ -1,0 +1,140 @@
+Inheritance
+----------------------
+-> Inheritance in Java is a mechanism in which one object acquires all the 
+   properties and behaviors of a parent object. 
+
+
+  super/parent/base
+  sub /child/derrived
+
+
+ 
+
+Types
+------------
+1.single
+2.multiple
+
+
+1.single
+------------
+-> Any class having a single sub class
+
+2.multiple
+-----------------
+-> Any class having more than one sub class
+
+
+
+method overridding
+------------------------
+-> same method signature of a parent class is present in the sub class.
+
+super keyword
+-----------------
+-> super keyword can be used,
+			-> to call super class constructors
+			-> to call super class methods
+			-> to invoke super class properties from  sub class
+
+
+
+ implementing abstraction
+---------------------------------
+
+-> abstraction can be implemented only by storing sub class object in the super 
+   class object.
+
+
+
+ Notes
+---------
+-> a super class object can store all its sub class objects
+-> ref of super class can be used to access all the methods from super class, and
+   common methods (overridden methods ) of a sub class.
+-> ref of super class can not used to access individual methods (a method defined
+   in the sub class and not defined in super class) of a sub class
+
+issues with inheritance
+---------------------------------
+1. sub class is not forced to override super class method
+		-> this may leads to serious logic bugs
+
+what is the solution then?
+-----------------------------
+->use abstract classes to rectict sub class to override super class abstract method.
+
+
+
+ abstrat classes
+--------------------
+-> an abstract class is a method specification which contains zero or more 
+   abstract methods, concremete methods 
+-> We can not create object to abstract class
+-> abstract contains abstract methods
+-> abstract method never have body
+-> But can create ref to an abstract class.
+-> abstract class object can store all its sub class objects
+-> ref of abstract class can be used to access all the methods from abstract class, and
+   common methods (overridden methods ) of its  sub classes.
+-> ref of abstract class can not used to access individual methods (a method defined
+   in the sub class and not defined in super class) of its sub classes
+-> All the sub classes of an abstract class must implement all the abstract methods
+- if any of the sub class of an abstract class is not implementing any one od the 
+  abstract methods, then that sub class must be defined as 'abstract'
+
+
+  
+issues with abstract classes
+--------------------------------------
+-> can not implement 100% abstraction. 
+-> its always supports tight couple design
+-> application can not support extensibility
+
+when to use abstract classes?
+-----------------------------------
+-> when requirements from the client is not extendable
+
+
+then how to implement 100% abstraction and extesibility?
+------------------------------------------------------------
+-> use interfaces 
+
+ What is an interface?
+============================
+-> An interface is a method specification which contains zero or more 
+   abstract methods only
+-> Any interface contains zero methods, then its called marker / tagged interface
+-> by default very metod in the interface is public and abstract
+-> every property in the interface by default public static and final
+-> Intreface object can not be created, but ref can be created
+-> the ref of an interface can be used to atore all its sub class objects
+-> ref of interface  can be used to access all the methods of interface, and
+   common methods (overridden methods ) of its  implemented classes classes.
+-> ref of interface  can not used to access individual methods (a method defined
+   in the sub  class and not defined in super class) of its sub classes
+-> All the sub classes of an interafce  must implement all the abstract methods
+- if any of the sub class of an interface  is not implementing any one od the 
+  abstract methods, then that sub class must be defined as 'abstract'
+
+ when to use interfaces and abstract classes
+----------------------------------------------------------
+-> if you want to achive a concept extensibility, the use interface, other wise use abstract class
+-> Interface stricly follow /support Interface Segregation Principle	(ISP). where abstract never support it
+-> interface supports lose couple design
+-> abstract class support tight couple design
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
